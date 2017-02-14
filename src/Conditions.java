@@ -2,6 +2,7 @@
 import becker.robots.City;
 import becker.robots.Direction;
 import becker.robots.Robot;
+import becker.robots.Thing;
 import becker.robots.Wall;
 
 /*
@@ -30,16 +31,36 @@ public class Conditions {
         new Wall (kw, 1, 5, Direction.EAST);
         
         //creating a thing
+        new Thing (kw, 0, 1);
+        new Thing (kw, 0, 1);
+        new Thing (kw, 0, 1);
+        new Thing (kw, 0, 1);
+        new Thing (kw, 0, 1);
+        new Thing (kw, 0, 1);
         
-        
-        
-        //An infinite loop
+        //an infinite loop; asking karel if it was free to move
         while(karel.frontIsClear()){
+            
+            //move and turn left
             karel.move();
-            karel.turnLeft();
-            while(karel.canPickThing()){
+            //karel.turnLeft();
+            
+            //if there is something to pick up
+            if(karel.canPickThing()){
                 
-           
+                //pick up everything
+                karel.pickThing();
+                
+                //stop the loop after it picks up one thing
+                break;
+            }
+            
+            //did karel hit a wall
+            //! says to do the opposite; the 'not' symbol
+            if(!(karel.frontIsClear() )){
+                karel.turnLeft();
+            
+                
             }
         }
         
