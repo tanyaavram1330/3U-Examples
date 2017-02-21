@@ -87,7 +87,9 @@ public class Conditions2 {
         karel.move();
         
         //if holding 4 things, stop
-                }karel.putThing();
+                }else{
+                    break;
+                }
                 
         
         
