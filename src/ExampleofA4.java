@@ -57,7 +57,7 @@ public class ExampleofA4 {
         System.out.println("You are " + age + " years old");
         }else{
             //inputs that their are lying
-            System.out.println("I think you are lying");
+            System.out.println("Stop lying to yourself. Be Earnest");
         }
         
         // + add
@@ -68,6 +68,7 @@ public class ExampleofA4 {
         // you can do 10*(1+3) however you have to tell it to do it. No short cuts.
         // To make the computer to be more pasific is to add 9.0; The .0 adds the decimal
         // 5%2 shows the remainder. It tell you what's left over. The answer is 1.
+        
     }
 
 }
