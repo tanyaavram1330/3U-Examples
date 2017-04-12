@@ -55,6 +55,19 @@ public class ArrayExample {
         //calculate average
         double avg = sum/marks.length;
         System.out.println("The average is " + avg + ".");
+        
+        //outprinting the marks
+        System.out.println("");
+        System.out.println("The numbers in your array is");
+        for (int i = 0; i < marks.length; i++) {
+            System.out.println(marks[i]);
+            
+        }
+        
+        //Extra - enchanced for loop
+        for (double num:marks){
+            System.out.println(num);
+        }
     }
 
 }
